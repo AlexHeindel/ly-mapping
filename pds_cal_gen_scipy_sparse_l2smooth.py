@@ -287,7 +287,7 @@ def build_linear_system(trajectory_chain, photon_counts, ndiv, num_events):
     rows, cols, values = [], [], []
     b = np.zeros(events_to_use, dtype=np.float64)
 
-    # The original Angelo2 workflow applies no additional event cut. Add one
+    # The original workflow applies no additional event cut. Add one
     # here before filling b and A if a different sample requires selection.
     for row_index in range(events_to_use):
         trajectory_chain.GetEntry(row_index)
