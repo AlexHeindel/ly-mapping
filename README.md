@@ -30,7 +30,7 @@ Python reconstruction script that:
 * solves the nonnegative least-squares problem with SciPy,
 * writes the reconstructed voxel light yields to a text file.
 
-The included data-loading code is configured as an example for the Angelo2 simulation files. Users will generally need to modify the ROOT tree names, branch names, optical-channel selection, file naming pattern, detector geometry, or event association for their own dataset.
+The included data-loading code is configured as an example for the simulation files used in this study. Users will generally need to modify the ROOT tree names, branch names, optical-channel selection, file naming pattern, detector geometry, or event association for their own dataset.
 
 ### `liang_barsky.C`
 
@@ -93,7 +93,7 @@ No large input datasets or generated reconstruction files are included in this r
 
 ## Input data assumptions
 
-The example solver is configured for Angelo2 ROOT files with names of the form:
+The example solver is configured for ROOT files with names of the form:
 
 ```text
 run0_rsl100_abs20_500evts.root
@@ -233,7 +233,7 @@ python3 pds_cal_gen_scipy_sparse_l2smooth.py \
 
 The main arguments are:
 
-* `--data-dir`: directory containing the Angelo2 ROOT files,
+* `--data-dir`: directory containing the ROOT files,
 * `--ndiv`: number of voxel divisions along each axis,
 * `--num-events`: maximum number of trajectory entries to process,
 * `--lambda-smooth`: nearest-neighbor smoothness strength,
@@ -381,7 +381,7 @@ Runtime is primarily determined by:
 * the number of track–voxel intersection tests,
 * the convergence behavior of the bounded least-squares solver.
 
-The example Angelo2 dataset may contain billions of detected-photon records. Reading and aggregating this tree can therefore take substantially longer than processing the trajectory tree.
+The example dataset may contain billions of detected-photon records. Reading and aggregating this tree can therefore take substantially longer than processing the trajectory tree.
 
 Increasing `ndiv` increases the number of unknowns as:
 
