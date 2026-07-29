@@ -72,7 +72,7 @@ void pds_cal_plot()
 	float zmax = 600;
 
 	std::vector<double> x;
-	std::ifstream x_in("angelo2_12x12x12_60000evts_lambda3e6.txt");
+	std::ifstream x_in("test_12x12x12_60000evts_lambda3e6.txt");
 
 	if (!x_in) {
     	std::cerr << "Error: could not open input file\n";
