@@ -48,3 +48,7 @@ dist/
 # IDE settings
 .vscode/
 .idea/
+
+# Claude Code configuration and generated files
+CLAUDE.md
+.claude/
