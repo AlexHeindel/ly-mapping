@@ -1,6 +1,6 @@
 # LY Mapping
 
-Tools for reconstructing and visualizing three-dimensional light-yield maps using crossing-muon data.
+Tools for reconstructing and visualizing three-dimensional light-yield maps using crossing-muon data. To learn more about this work, check out my preprint on arXiv: [Reconstructing High-Fidelity Light Yield Maps for Surface LArTPCs Using Crossing Cosmic Muons](https://arxiv.org/abs/2608.21581).
 
 The reconstruction treats the detector volume as a regular three-dimensional voxel grid. For each crossing-muon track, the path length through every intersected voxel is calculated and used to construct a sparse linear system,
 
