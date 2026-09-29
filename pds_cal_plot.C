@@ -83,11 +83,15 @@ void pds_cal_plot()
 	x_in >> ndiv;
 	int arr_size = pow(ndiv, 3);
 	
-	double val;
-	while (x_in >> val) {
-	    x.push_back(val);
-	}
-	
+	std::string tok;
+        while (x_in >> tok) {
+            x.push_back(std::strtod(tok.c_str(), nullptr));
+        }
+        if ((int)x.size() != arr_size) {
+            std::cerr << "Error: read " << x.size() << " values, expected " << arr_size
+		    << " (ndiv " << ndiv << ")\n";
+            return;
+        }
 
 	// Result is in photons/MeV	
 	//std::cout << "Solution x:\n" << x << std::endl;
