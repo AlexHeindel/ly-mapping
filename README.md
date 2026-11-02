@@ -181,7 +181,7 @@ where:
 The example code uses:
 
 $$
-\frac{dE}{dx} = 2.1\ \mathrm{MeV/cm}.
+\frac{dE}{dx} = 2.7\ \mathrm{MeV/cm}.
 $$
 
 The reconstructed values therefore have units of PE/MeV when the observation

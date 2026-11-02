@@ -64,7 +64,7 @@ SELECTED_OP_CHANNELS = {
     0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 16, 17, 22, 23,
 }
 
-MIP_ENERGY_LOSS = 2.1  # MeV/cm
+MIP_ENERGY_LOSS = 2.7  # MeV/cm
 NO_INTERSECTION = -999.0
 
 
