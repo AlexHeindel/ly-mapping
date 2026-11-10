@@ -6,7 +6,7 @@ Sparse crossing-muon light-yield reconstruction example.
 
 For each crossing-muon event, the code builds
 
-    A[event, voxel] = path_length[event, voxel] * 2.1 MeV/cm,
+    A[event, voxel] = path_length[event, voxel] * 2.7 MeV/cm,
 
 and uses the detected-photon count as b[event]. The voxel light-yield map x is
 then obtained from a non-negative least-squares fit. With --lambda-smooth > 0,
